@@ -12,7 +12,7 @@ library](https://github.com/google/re2).
 
 All `re2-ci` images have RubyGems 2.7.11 installed and Bundler 1.17.3. Note that the 1.8 image disables Bundler's SSL verification otherwise it cannot communicate with rubygems.org.
 
-* `mudge/libre2-deb`: an Ubuntu 16.04 image with [fpm](https://github.com/jordansissel/fpm) installed for packaging versions of the underlying [re2 library](https://github.com/google/re2) for use on GitHub Actions.
+* `mudge/libre2-dev`: an Ubuntu 16.04 image with [fpm](https://github.com/jordansissel/fpm) installed for packaging versions of the underlying [re2 library](https://github.com/google/re2) for use on GitHub Actions.
 
 ## References
 
