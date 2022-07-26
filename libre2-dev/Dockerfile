@@ -1,8 +1,11 @@
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 
-RUN apt-get update && \
-    apt-get install -y \
-    ruby ruby-dev rubygems build-essential git curl
+RUN apt-get update
+
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata
+
+RUN apt-get install -y \
+    ruby ruby-dev rubygems build-essential git curl cmake
 
 RUN gem install --no-document fpm
 
