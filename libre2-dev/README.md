@@ -8,8 +8,8 @@ Actions](https://docs.github.com/en/actions).
 ## Usage
 
 ```
-$ docker build . --tag mudge/libre2-dev
-$ docker run -v $(pwd):/data --workdir /data mudge/libre2-dev 2021-02-02 20210202
+$ docker build 20.04 --tag mudge/libre2-dev:20.04 --platform linux/amd64
+$ docker run -v $(pwd):/data --workdir /data --platform linux/amd64 mudge/libre2-dev:20.04 2021-02-02 20210202
 ```
 
 The above commands will build the image and then run the build script (found in
