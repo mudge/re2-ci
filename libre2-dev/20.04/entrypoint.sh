@@ -12,4 +12,4 @@ cd re2-${re2_release}
 make install prefix=/usr DESTDIR=/tmp/installdir
 
 # Package up the release with fpm
-fpm -s dir -t deb -n libre2-dev -v "${version}" -C /tmp/installdir --replaces libre2-5 usr/include usr/lib
+fpm -s dir -t deb -n libre2-dev -v "${version}" -C /tmp/installdir --replaces libre2-5 -d libabsl-dev usr/include usr/lib
